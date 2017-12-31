@@ -1,0 +1,48 @@
+/* GENERAL STYLES */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font: normal 1em sans-serif;
+    color: #555;
+}
+
+ul, nav {
+    list-style: none;
+}
+
+
+/* HEADER STYLES */
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 35px 100px;
+    background-color: black;
+}
+
+header button {
+    margin-right: 20px;
+    border: none;
+    font-family: "Montserrat", sans-serif;
+}
+
+header :nth-last-child() {
+    margin-right: 60px;
+}
+
+/* MAIN STYLES */
+
+.hero {
+    /* Photo by Kaci Baum on Unsplash */
+    background-image: url("Assets/Media/kaci-baum-108756.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+}
