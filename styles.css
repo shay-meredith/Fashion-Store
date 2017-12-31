@@ -40,17 +40,24 @@ header button {
     font-weight: bold;
     font-size: 0.7em;
     color: white;
+    opacity: 0.8;
 }
 
 header button:hover {
     color: #00c1c1;
     cursor: pointer;
+    opacity: 1;
 }
 
 header button:last-child {
     margin-left: 40px;
     margin-right: 20vw;
     background-color: #00c1c1;
+    opacity: 1;
+}
+header button:last-child:hover {
+    opacity: 1;
+    color: white;
 }
 
 .fa-shopping-cart {
