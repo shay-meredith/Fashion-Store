@@ -23,18 +23,32 @@ header {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    padding: 35px 100px;
     background-color: black;
 }
 
 header button {
-    margin-right: 20px;
+    margin-right: 10px;
+    padding: 15px 20px;
     border: none;
+    background-color: black;
     font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    font-size: 0.7em;
+    color: white;
 }
 
-header :nth-last-child() {
-    margin-right: 60px;
+header button:last-child {
+    margin-left: 40px;
+    margin-right: 20vw;
+    background-color: #00c1c1;
+}
+
+.fa-shopping-cart {
+    margin: 0 10px;
+}
+
+.fa-angle-down {
+    margin: 0 10px 0 5px;
 }
 
 /* MAIN STYLES */
