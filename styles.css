@@ -68,15 +68,20 @@ header button:last-child {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    overflow: hidden;
+    background-color: #94b6d0; 
+    background-image: url("Assets/Media/kaci-baum-108756.jpg"); 
+    background-size: 100vw 67vw;
+    background-repeat: no-repeat;
+    background-position-y: -180px;
 }
 
 .hero .background {
     position: absolute;
-    width: 100%;
-    min-height: 100%;
+    min-width: 100vw;
     background-size: cover;
     z-index: -99;
-    top: -120px;
+    top: 0;
     background-color: #94b6d0;
 }
 
@@ -116,7 +121,6 @@ header button:last-child {
     color: #4d4749;
     text-align: center;
     letter-spacing: 100px;
-    z-index: -1;
     margin: 0 auto;
     padding-left: 100px;
     width: 80vw;
@@ -130,4 +134,30 @@ header button:last-child {
     text-transform: uppercase;
     padding: 15px 25px;
     margin: 0 100px 70px 0;
+}
+
+/* STORE STYLES */
+
+.store {
+    width: 80vw;
+}
+
+.store nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.store button {
+    color: black;
+    background: transparent;
+    border: none;
+    padding: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.store button:hover {
+    color: #00c1c1;
+    cursor: pointer;
 }
