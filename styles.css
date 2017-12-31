@@ -21,6 +21,14 @@ ul, nav {
     list-style: none;
 }
 
+hr {
+    height: 2px;
+    width: 90vw;
+    background-color: #00c1c1;
+    border: 0;
+    margin: 30px auto 10px auto;
+    opacity: 0.6;
+}
 
 /* HEADER STYLES */
 
@@ -145,12 +153,20 @@ header button:last-child:hover {
     text-transform: uppercase;
     padding: 15px 25px;
     margin: 0 100px 70px 0;
+    opacity: 0;
+    animation: 1s fadein 2s forwards;
+}
+@keyframes fadein {
+    100% {
+        opacity: 1;
+    }
 }
 
 /* STORE STYLES */
 
 .store {
-    width: 80vw;
+    width: 90vw;
+    margin: 0 auto;
 }
 
 .store nav {
@@ -177,19 +193,33 @@ header button:last-child:hover {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+}
+
+.store .gallery .grid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-basis: 50%;
+    justify-content: center;
     align-content: flex-start;
-    height: 600px;
 }
 
-.store .gallery .card {
+.store .gallery li {
     background-color: gray;
+    padding: 10px;
+    background-clip: content-box;
+    background-size: cover;
+    background-position: center;
 }
 
-.store .gallery .card .small {
-    flex-basis: 200px 400px;
+.store .gallery li.small {
+    flex-basis: 50%;
+    height: 250px;
 }
 
-.store .gallery .card .large {
-    flex-basis: 500px 600px;
+.store .gallery li.large {
+    flex-basis: 100%;
+    height: 400px;
 }
+
+/* LOOKBOOK STYLES */
