@@ -223,3 +223,67 @@ header button:last-child:hover {
 }
 
 /* LOOKBOOK STYLES */
+
+.lookbook {
+    margin: 30px auto 50px auto;
+    width: 95%;
+}
+
+.lookbook ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.lookbook ul li {
+    background-color: gray;
+    background-clip: content-box;
+    background-size: cover;
+    background-position: center;
+    flex-basis: 32%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: flex-end;
+    text-align: right;
+}
+
+.lookbook ul li .text-container {
+    height: 80%;
+    width: 50%;
+    background-color: white;
+}
+
+.lookbook ul li .text-container h2 {
+    font-weight: 400;
+    text-transform: uppercase;
+    margin: 20px 10px 10px 0;
+}
+.lookbook ul li .text-container h2 .bold {
+    font-weight: 700;
+}
+
+.lookbook ul li .text-container p {
+    font-family: "Roboto", sans-serif;
+    font-size: 0.7em;
+    margin-right: 10px;
+}
+
+.lookbook ul li .text-container button {
+    text-transform: uppercase;
+    padding: 10px 20px;
+    background-color: white;
+    border: 1px solid black;
+    color: black;
+    margin: 20px 10px;
+}
+
+.lookbook ul li .text-container button:hover {
+    background-color: #00c1c1;
+    border: 1px solid white;
+    color: white;
+}
