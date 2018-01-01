@@ -287,3 +287,126 @@ header button:last-child:hover {
     border: 1px solid white;
     color: white;
 }
+
+/* FOOTER STYLES */
+
+footer {
+    background-color: rgb(240, 240, 240);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .links {
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    margin: 30px 15vw;
+    width: 100%;
+    font-family: "Roboto", sans-serif;
+    font-size: 0.6em;
+}
+
+footer .links ul {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 20%;
+}
+
+footer .links ul li {
+    padding: 5px 0;
+    opacity: 0.8;
+}
+
+footer .links ul li:hover {
+    cursor: pointer;
+    color: #00c1c1;
+    opacity: 1;
+}
+
+footer .links ul li:first-child {
+    font-weight: bold;
+    padding: 10px 0 20px 0;
+    opacity: 1;
+}
+
+footer .links ul li:first-child:hover {
+    cursor: auto;
+    color: #555;
+    opacity: 1;
+}
+
+footer .links ul:last-child li:nth-child(1n+2) {
+    padding: 0;
+    opacity: 1;
+}
+
+footer .links ul:last-child li:nth-child(4) {
+    padding-bottom: 5px;
+    opacity: 1;
+}
+
+footer .links ul:last-child li:nth-child(1n+6) {
+    padding: 0;
+    opacity: 1;
+}
+
+footer .links ul:last-child li:hover {
+    cursor: auto;
+    color: #555;
+    opacity: 1;
+}
+
+footer .connect {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 15vw;
+    width: 100%;
+}
+
+footer .connect .award {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 49%;
+    height: 100px;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+footer .connect .social {
+    flex-basis: 49%;
+    height: 100px;
+    background-color: #00c1c1;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .connect .social ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .copyright {
+    margin: 0 15vw;
+    width: 100%;
+    font-family: "Roboto", sans-serif;
+    font-size: 0.5em;
+}
+
+footer .copyright ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
